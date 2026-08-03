@@ -1,5 +1,4 @@
 import "./styles.css";
-import dinnerImage from "./assets/dinner.jpg";
 
 function App() {
   return (
@@ -15,22 +14,21 @@ function App() {
         </ul>
       </nav>
 
-      <section
-        className="hero"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)), url(${dinnerImage})`,
-        }}
-      >
-        <h1>Your Seat Is Waiting</h1>
+      <section className="hero">
+        <div className="hero-overlay"></div>
 
-        <h2>Gather around something meaningful.</h2>
+        <div className="hero-content">
+          <h1>Your Seat Is Waiting</h1>
 
-        <p>
-          Chef-led gatherings inspired by culture,
-          conversation, and community.
-        </p>
+          <h2>Gather around something meaningful.</h2>
 
-        <button>Explore Upcoming Gatherings →</button>
+          <p>
+            Chef-led gatherings inspired by culture,
+            conversation, and community.
+          </p>
+
+          <button>Reserve Your Seat →</button>
+        </div>
       </section>
     </main>
   );
