@@ -13,12 +13,22 @@ function Home() {
       </section>
 
       {/* WHY WE GATHER */}
-      <section className="why-gather">
-        <span className="tag">Our Philosophy</span>
-        <h2>More than dinner. A place to belong.</h2>
-        <p>
-          We curate unhurried, beautifully designed tables where strangers become community, conversations linger, and every plate tells a story.
-        </p>
+      <section className="editorial-section">
+        <div className="editorial-container">
+          <div className="editorial-left">
+            <span className="tag">Our Philosophy</span>
+
+            <h2>More than dinner. A place to belong.</h2>
+
+            <p>We curate unhurried, beautifully designed tables where strangers become community...</p>
+          </div>
+
+          <div className="editorial-right">
+            <div className="editorial-image-placeholder">
+              Image Coming Soon
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* UPCOMING GATHERINGS */}

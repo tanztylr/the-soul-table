@@ -655,3 +655,58 @@ main {
     flex-direction: column;
   }
 }
+/* ==========================================
+   Editorial Section
+========================================== */
+.editorial-section {
+  padding: 5rem 2rem 7rem;
+  background-color: #f8f5f0;
+}
+
+.editorial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.editorial-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.editorial-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editorial-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #b8a98d;
+  font-style: italic;
+}
+.editorial-left h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  color: #2d241d;
+  margin: 1rem 0 2rem;
+  max-width: 10ch;
+}
+.editorial-left p {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #5f554b;
+  max-width: 32rem;
+}
