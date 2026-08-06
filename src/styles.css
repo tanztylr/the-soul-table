@@ -585,3 +585,73 @@ main {
   font-size: 0.85rem;
   font-family: system-ui, -apple-system, sans-serif;
 }
+/* WAITLIST STYLES */
+.waitlist-banner {
+  background-color: #191512;
+  border: 1px solid #2e2823;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.waitlist-banner h4 {
+  color: #f4f1ea;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+}
+
+.waitlist-banner p {
+  color: #c5bbb3;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.waitlist-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.waitlist-form input {
+  flex: 1;
+  background-color: #120f0d;
+  border: 1px solid #2e2823;
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  color: #f4f1ea;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.waitlist-form input:focus {
+  border-color: #e6c594;
+}
+
+.waitlist-btn {
+  background-color: #e6c594;
+  color: #120f0d;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.waitlist-btn:hover {
+  background-color: #f4f1ea;
+}
+
+@media (max-width: 600px) {
+  .waitlist-form {
+    flex-direction: column;
+  }
+}

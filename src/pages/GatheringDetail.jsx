@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 function GatheringDetail() {
   const { id } = useParams();
+  const [waitlistEmail, setWaitlistEmail] = useState("");
+  const [waitlistSubmitted, setWaitlistSubmitted] = useState(false);
 
-  // Mock data for individual gatherings based on the ID
+  const handleWaitlistSubmit = (e) => {
+    e.preventDefault();
+    if (waitlistEmail.trim()) {
+      setWaitlistSubmitted(true);
+    }
+  };
+
   const gatheringsData = {
     "autumn-harvest": {
       title: "Roots & Reminiscence",
@@ -106,11 +114,32 @@ function GatheringDetail() {
           </div>
         </div>
 
-        {/* RESERVE CALL TO ACTION */}
+        {/* RESERVE CALL TO ACTION & WAITLIST */}
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
           <Link to="/reserve" className="nav-btn" style={{ padding: "1rem 2.5rem", fontSize: "1rem", display: "inline-block" }}>
             Reserve Your Seat for this Gathering
           </Link>
+
+          {/* Waitlist Section */}
+          <div className="waitlist-banner">
+            <h4>Hoping for a Sold-Out Seat?</h4>
+            <p>Join our priority waitlist for {event.title} to be notified immediately if a seat opens up.</p>
+            
+            {waitlistSubmitted ? (
+              <p style={{ color: "#e6c594", fontWeight: "500" }}>You're on the list! We will reach out if a seat becomes available.</p>
+            ) : (
+              <form onSubmit={handleWaitlistSubmit} className="waitlist-form">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email address" 
+                  value={waitlistEmail}
+                  onChange={(e) => setWaitlistEmail(e.target.value)}
+                  required 
+                />
+                <button type="submit" className="waitlist-btn">Join Waitlist</button>
+              </form>
+            )}
+          </div>
         </div>
       </div>
     </section>
