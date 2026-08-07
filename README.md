@@ -1,16 +1,204 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# ✨ The Soul Table
 
-Currently, two official plugins are available:
+### An immersive fine dining experience crafted for the web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*A modern restaurant website inspired by intentional gathering, storytelling, and elevated hospitality.*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-DD0031?style=for-the-badge&logo=react-router&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-Elegant-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Expanding the Oxlint configuration
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+# Overview
+
+The Soul Table is a luxury-inspired restaurant website designed to evoke the feeling of an intimate culinary experience before a guest ever arrives.
+
+Rather than focusing solely on reservations, the site tells a story through elegant typography, refined layouts, intentional spacing, and immersive content.
+
+Every page is designed to feel calm, welcoming, and memorable.
+
+---
+
+# Design Inspiration
+
+The visual direction draws inspiration from:
+
+- Michelin-star dining experiences
+- Boutique hotels
+- Editorial magazine layouts
+- Modern luxury branding
+- Fine typography
+- Intentional white space
+
+---
+
+# Features
+
+✔ Elegant landing page
+
+✔ Interactive navigation
+
+✔ Sample tasting menu
+
+✔ Our Story page
+
+✔ Journal section
+
+✔ Reservation page
+
+✔ FAQ
+
+✔ Dynamic gathering detail pages
+
+✔ Responsive layout
+
+✔ Built with reusable React components
+
+---
+
+# Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React | UI Framework |
+| Vite | Development & Build Tool |
+| React Router | Client-side Routing |
+| CSS3 | Custom Styling |
+| JavaScript (ES6+) | Application Logic |
+
+---
+
+# Project Structure
+
+```text
+src/
+│
+├── assets/
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── OurStory.jsx
+│   ├── Menu.jsx
+│   ├── Journal.jsx
+│   ├── FAQ.jsx
+│   ├── Reserve.jsx
+│   └── GatheringDetail.jsx
+│
+├── App.jsx
+├── main.jsx
+└── styles.css
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/the-soul-table.git
+```
+
+Move into the project
+
+```bash
+cd the-soul-table
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+# Screens
+
+- Home
+- Our Story
+- Sample Menu
+- Journal
+- FAQ
+- Reserve
+- Gathering Details
+
+---
+
+# Current Status
+
+🚧 In Active Development
+
+Recent improvements include:
+
+- Refined luxury menu layout
+- Editorial-inspired typography
+- Elegant course dividers
+- Improved spacing and visual hierarchy
+- React Router navigation
+- Component restructuring
+
+---
+
+# Future Enhancements
+
+- Reservation form validation
+- Animated page transitions
+- Image galleries
+- Chef profiles
+- Seasonal menu support
+- Dark mode
+- CMS integration
+- Mobile-first refinements
+
+---
+
+# What I Learned
+
+This project strengthened my understanding of:
+
+- React component architecture
+- Client-side routing
+- Layout composition
+- CSS Grid
+- Responsive design
+- UI hierarchy
+- Building reusable interfaces
+- Git & GitHub workflow
+
+---
+
+# Author
+
+### Tanzaneya Taylor
+
+Project Manager • Builder • Product Thinker
+
+Creating thoughtful digital experiences that blend functionality with intentional design.
+
+---
+
+<div align="center">
+
+### Thank you for visiting The Soul Table.
+
+*"Where every gathering tells a story."*
+
+</div>
