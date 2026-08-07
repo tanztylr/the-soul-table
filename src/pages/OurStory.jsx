@@ -1,4 +1,5 @@
 import React from "react";
+import founderPhoto from "../assets/tanza.jpg";
 
 function Story() {
   return (
@@ -11,12 +12,14 @@ function Story() {
       <div className="story-content">
         {/* THE MISSION / THE PROBLEM */}
         <div className="story-block">
-          <h3>More than dinner. A place to belong.</h3>
+          <h3>More than a meal. An invitation to connect.</h3>
           <p>
-            In a world hyper-connected by screens, true connection has become remarkably rare. Modern dining is often rushed, transactional, and built around superficial distractions. 
+             <p>
+  Imagine an evening where time lingers a little longer. The table is warmly lit, every course is prepared with intention, and conversations flow as naturally as the wine is poured. If you could spend an evening anywhere, let it be somewhere that leaves you with stories worth telling and memories you'll quietly carry long after you've gone home.
+</p>
           </p>
           <p>
-            The Soul Table was created as a deliberate counter-culture to that rush. It is a sanctuary designed to slow time down, spark profound storytelling, and offer a space where warmth, intentional hospitality, and exquisite food intersect.
+            The Soul Table exists for evenings like these. Thoughtfully prepared meals become the backdrop for meaningful conversation, genuine connection, and memories that linger long after the final course is served. Every gathering is intentionally designed so guests leave feeling nourished both through their stomach and hearts.
           </p>
         </div>
 
@@ -24,30 +27,31 @@ function Story() {
         <div className="story-block">
           <div style={{ textAlign: "center", marginBottom: "2rem" }}>
             <span className="tag">Our Philosophy</span>
-            <h3 style={{ marginTop: "0.5rem" }}>What We Stand For</h3>
+            <h3 style={{ marginTop: "0.5rem" }}>The Principles That Guide Every Gathering</h3>
           </div>
           
           <div className="values-grid">
             <div className="value-card">
-              <h4>Gather Intentionally</h4>
-              <p>Every detail—from lighting to timing—is curated to foster an atmosphere of ease and comfort.</p>
+              <h4>Create Space to Gather</h4>
+              <p>Every detail is thoughtfully considered so guests can settle in, slow down, and enjoy an evening that unfolds naturally.</p>
             </div>
             <div className="value-card">
               <h4>Everyone Has a Seat</h4>
-              <p>Hospitality means radical welcome. You are treated like family the moment you step up to the table.</p>
+              <p> From the moment you arrive, our hope is simple: that you feel welcomed, comfortable, and as though your seat has been waiting for you all along.</p>
             </div>
             <div className="value-card">
-              <h4>Share Generously</h4>
-              <p>Food is history, culture, and love made tangible. We believe in abundance and sharing rich stories.</p>
+              <h4>Stories Are Meant to Be Shared</h4>
+              <p>The most unforgettable meals are remembered for more than what was served. They are remembered for the laughter, the stories, and the people gathered around the table.</p>
             </div>
             <div className="value-card">
               <h4>Leave Better Than You Arrived</h4>
-              <p>Our goal is that you walk away nourished not just by the meal, but by the energy of the people around you.</p>
+              <p>The evening doesn't end when dessert is served. We hope you leave with something that lingers: a story you'll retell, a connection you'll cherish, or the simple feeling that time was well spent.
+</p>
             </div>
           </div>
         </div>
 
-        {/* MEET THE TABLE (TEAM) */}
+        {/* MEET THE TABLE */}
         <div className="story-block">
           <div style={{ textAlign: "center", marginBottom: "2rem" }}>
             <span className="tag">The People</span>
@@ -57,14 +61,14 @@ function Story() {
           <div className="team-grid">
             <div className="team-card">
               <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" 
+                src={founderPhoto}
                 alt="Tanza Taylor" 
                 className="team-avatar"
               />
               <h4>Tanza Taylor</h4>
               <span className="team-role">Founder & Host</span>
               <p>
-                Believes that the best memories in life are forged across timber tables with good wine and unhurried conversation.
+                Created The Soul Table from a belief that every unforgettable evening begins with good food, genuine conversation, and a place where everyone has a seat.
               </p>
             </div>
 
