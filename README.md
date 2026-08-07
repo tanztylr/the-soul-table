@@ -33,10 +33,8 @@ The visual direction draws inspiration from:
 
 - Michelin-star dining experiences
 - Boutique hotels
-- Editorial magazine layouts
 - Modern luxury branding
 - Fine typography
-- Intentional white space
 
 ---
 
