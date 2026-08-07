@@ -13,14 +13,15 @@ function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4>Explore</h4>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/story">Our Story</Link></li>
-            <li><Link to="/menu">Sample Menu</Link></li>
-            <li><Link to="/faq">FAQ</Link></li>
-          </ul>
-        </div>
+  <h4>Explore</h4>
+  <ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/our-story">Our Story</Link></li>
+    <li><Link to="/sample-menu">Sample Menu</Link></li>
+    <li><Link to="/journal">Journal</Link></li>
+    <li><Link to="/faq">FAQ</Link></li>
+  </ul>
+</div>
 
         <div className="footer-links">
           <h4>Experience</h4>

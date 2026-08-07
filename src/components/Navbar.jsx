@@ -10,7 +10,7 @@ function Navbar() {
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/our-story">Our Story</Link>
-        <Link to="/sample-menu">Sample Menu</Link>
+        <Link to="/menu">Sample Menu</Link>
         <Link to="/journal">Journal</Link>
         <Link to="/faq">FAQ</Link>
         <Link to="/reserve" className="nav-reserve-btn">Reserve</Link>
