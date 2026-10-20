@@ -69,18 +69,37 @@ export default function HomePage() {
       </header>
 
       {/* Hero Atmosphere Section */}
-      <section className="relative overflow-hidden rounded-3xl border border-stone-800/80 bg-surface/60 p-8 sm:p-14 shadow-2xl">
+      <section className="relative overflow-hidden rounded-3xl border border-stone-800/80 p-8 sm:p-16 lg:p-20 shadow-2xl min-h-[560px] flex flex-col justify-end">
+        {/* Background Photo */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+          style={{ backgroundImage: "url('/soul-table-home-page-rendition.png')" }}
+        />
+
+        {/* Dark Vignette Overlays for Crisp Text Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-stone-950/60" />
+
+        {/* Hero Content */}
         <div className="relative z-10 max-w-2xl flex flex-col gap-6">
-          <span className="inline-flex items-center gap-2 rounded-full border border-candle/30 bg-candle-glow px-3.5 py-1 text-xs font-medium text-candle w-fit">
-            <span className="h-2 w-2 rounded-full bg-candle animate-pulse"></span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-candle/30 bg-stone-950/80 px-3.5 py-1 text-xs font-medium text-candle w-fit backdrop-blur-md">
+            <span className="h-2 w-2 rounded-full bg-candle animate-pulse" />
             Reservation Window Open
           </span>
-          <h2 className="text-4xl sm:text-6xl font-serif text-stone-100 leading-tight">
-            An intentional table where culture, hospitality, and storytelling meet.
-          </h2>
-          <p className="text-stone-300 text-base sm:text-lg leading-relaxed font-sans font-light">
-            We gather 24 people around a single candlelit table for a 4-course modern Southern culinary narrative. No rushed turnover, no hype—just presence, craft, and shared connection.
+
+          <div className="space-y-2">
+            <h2 className="text-4xl sm:text-6xl font-serif text-stone-100 leading-[1.1] tracking-tight">
+              Your Seat is Waiting.
+            </h2>
+            <p className="font-serif text-2xl sm:text-3xl text-stone-300 italic">
+              Gather around something meaningful.
+            </p>
+          </div>
+
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed font-sans font-light max-w-lg">
+            Chef-led gatherings inspired by culture, conversation, and community. We gather 24 people around a single candlelit table for a 4-course modern Southern culinary narrative.
           </p>
+
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="#seating"
@@ -90,14 +109,15 @@ export default function HomePage() {
             </a>
             <Link
               href="/story"
-              className="rounded-xl border border-stone-700/80 bg-surface/60 px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-stone-300 hover:border-stone-500 hover:text-stone-100 transition-colors"
+              className="rounded-xl border border-stone-600/80 bg-stone-950/60 backdrop-blur-md px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-stone-200 hover:border-candle hover:text-candle transition-colors"
             >
               Read Why We Gather →
             </Link>
           </div>
         </div>
 
-        <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-candle/10 blur-3xl"></div>
+        {/* Soft Ambient Candlelight Glow */}
+        <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-candle/15 blur-3xl" />
       </section>
 
       {/* Section: The 4-Course Narrative Culinary Sequence */}
